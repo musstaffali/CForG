@@ -17,9 +17,6 @@ const IndexPage = () => (
     <a href="https://codeforgsogithubio.codeforgso.now.sh/">
       The Previous Site
     </a>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
   </Layout>
 )
 
