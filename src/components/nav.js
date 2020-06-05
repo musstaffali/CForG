@@ -1,6 +1,66 @@
 import React from "react"
 import { Link } from "gatsby"
+import logo from "../images/CfGLogoWhite.png"
+import styles from "./nav.module.css"
 
-export const NavMobile = () => <div>Menu Bar for Mobile</div>
+function Nav(props) {
+  function burgerClick(e) {
+    console.log("e.target= ", e.target)
+    console.log("dataset = ", e.target.dataset)
+    const menu = document.getElementById(e.target.dataset.target)
+    e.target.classList.toggle("is-active")
+    menu.classList.toggle("is-active")
+  }
 
-export const NavDesktop = () => <div>Menu Bar for Desktop</div>
+  return (
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
+
+        <a
+          id="navBurger"
+          role="button"
+          className="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navMenu"
+          onClick={burgerClick}
+        >
+          <span aria-hidden="true" className={styles.burgerspan}></span>
+          <span aria-hidden="true" className={styles.burgerspan}></span>
+          <span aria-hidden="true" className={styles.burgerspan}></span>
+        </a>
+      </div>
+
+      <div id="navMenu" className="navbar-menu">
+        <div className="navbar-start">
+          <Link className="navbar-item" to="/">
+            HOME
+          </Link>
+
+          <Link className="navbar-item" to="/about">
+            ABOUT
+          </Link>
+
+          <Link className="navbar-item" to="/resources">
+            RESOURCES
+          </Link>
+
+          <Link className="navbar-item" to="/ourprojects">
+            OUR PROJECTS
+          </Link>
+        </div>
+      </div>
+
+      <div className="navbar-end">
+        <Link className="navbar-item" to="/join">
+          JOIN US
+        </Link>
+      </div>
+    </nav>
+  )
+}
+
+export default Nav
