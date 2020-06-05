@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// If needed, change variables before importing Bulma
+// app colors
+$red: hsl(9, 69%, 49%);
+$green: hsl(180, 76%, 29%);
+$tan: hsl(53, 25%, 87%);
+$lightgreen: hsl(180, 76%, 40%);
+$text-white: hsl(0, 0%, 100%);
+$text-black: hsl(3, 0%, 0%);
+
+// title
+$title-color: $red;
+$subtitle-color: $red;
+
+// navbar
+$navbar-background-color: $green;
+$navbar-item-hover-background-color: $lightgreen;
+$navbar-item-color: $text-white;
+$navbar-item-hover-color: $text-black;
+
+// footer
+$footer-background: hsl(180, 100%, 10%);
+$footer-background-color: $footer-background;
+
+@import "~bulma/bulma.sass";
+
+// Reference: https://www.gatsbyjs.org/docs/bulma/
+// Bulma documentation on sass: https://bulma.io/documentation/customize/with-node-sass/
+// Bulma documentation: https://bulma.io/documentation/
