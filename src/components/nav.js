@@ -16,9 +16,10 @@ function Nav(props) {
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link to="/">
-          <img src={logo} alt="Logo" />
+          <div className="logowrap">
+            <img src={logo} alt="Logo" className="logo" />
+          </div>
         </Link>
-
         <a
           id="navBurger"
           role="button"
@@ -35,7 +36,7 @@ function Nav(props) {
       </div>
 
       <div id="navMenu" className="navbar-menu">
-        <div className="navbar-start">
+        <div className="navbar-end">
           <Link className="navbar-item" to="/">
             HOME
           </Link>
@@ -51,13 +52,15 @@ function Nav(props) {
           <Link className="navbar-item" to="/ourprojects">
             OUR PROJECTS
           </Link>
-        </div>
-      </div>
 
-      <div className="navbar-end">
-        <Link className="navbar-item" to="/join">
-          JOIN US
-        </Link>
+          <Link className="navbar-item" to="/donate">
+            DONATE
+          </Link>
+
+          <Link className="navbar-item" to="/join">
+            JOIN US
+          </Link>
+        </div>
       </div>
     </nav>
   )

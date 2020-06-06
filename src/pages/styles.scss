@@ -28,3 +28,24 @@ $footer-background-color: $footer-background;
 // Reference: https://www.gatsbyjs.org/docs/bulma/
 // Bulma documentation on sass: https://bulma.io/documentation/customize/with-node-sass/
 // Bulma documentation: https://bulma.io/documentation/
+
+//helper classes
+
+//custom classes
+.logo {
+  display: block;
+  margin: 5px 10px 5px 5px;
+  height: 80%;
+  width: auto;
+}
+
+.logowrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
