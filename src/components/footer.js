@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 
 const Footer = () => {
   return (
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <container className="logowrap">
+    <footer className="footer">
+      <div className="content has-text-centered">
+        <div className="logowrap">
           <img src={logo} alt="Logo" className="logo" />
-        </container>
+        </div>
         <p>&copy; 2020 Code for Greensboro</p>
       </div>
       <FooterNav />
@@ -24,19 +24,22 @@ const FooterNav = () => (
     <Link to="/join" className="navbar-item">
       JOIN US
     </Link>
-    <Link to="" className="navbar-item">
-      {" "}
+    <a href="mailto:hello@codeforgreensboro.org" className="navbar-item">
       E-MAIL US
-    </Link>
-    <Link to="" className="navbar-item">
+    </a>
+    <Link to="/conduct" className="navbar-item">
       CODE OF CONDUCT
     </Link>
     <Link to="/resources" className="navbar-item">
       RESOURCES
     </Link>
-    <Link to="" className="navbar-item">
+    <a
+      href="https://www.codeforamerica.org/"
+      target="_blank"
+      className="navbar-item"
+    >
       CODE FOR AMERICA
-    </Link>
+    </a>
   </nav>
 )
 
