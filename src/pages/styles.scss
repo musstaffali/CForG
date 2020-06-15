@@ -9,6 +9,9 @@ $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
 $text-black: hsl(3, 0%, 0%);
 
+//fonts
+$family-primary: Roboto, sans-serif;
+
 // title
 $title-color: $red;
 $subtitle-color: $red;
@@ -48,4 +51,42 @@ $footer-background-color: $footer-background;
 .footer-nav {
   display: flex;
   justify-content: center;
+}
+
+.has-hero-img {
+  background: linear-gradient(rgba(40, 57, 68, 0.61), rgba(40, 57, 68, 0.61)),
+    url("../images/Washington-DC-Capitol.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.hero-mission {
+  max-width: 40%;
+  min-width: 350px;
+  position: absolute;
+  left: 40px;
+  top: 150px;
+  font-size: 2.5em;
+}
+
+.hero-about {
+  padding: 40px 20px 60px 20px;
+  background-color: $green;
+  color: $tan;
+}
+
+.hero-about h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-about p {
+  margin-top: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 0px 50px;
 }
