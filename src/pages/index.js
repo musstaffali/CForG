@@ -8,10 +8,12 @@ const IndexPage = () => (
     <SEO title="Code for Greensboro - Local Code for America Brigade" />
     <section className="hero is-success is-halfheight has-hero-img">
       <div className="hero-body">
-        <h1 className="title hero-mission">
-          Code for Greensboro's mission is to engage our community and its
-          talent through civic action, open data, and technology
-        </h1>
+        <div className="column is-two-fifths">
+          <h1 className="title hero-mission">
+            Code for Greensboro's mission is to engage our community and its
+            talent through civic action, open data, and technology
+          </h1>
+        </div>
       </div>
     </section>
     <section className="hero-about">

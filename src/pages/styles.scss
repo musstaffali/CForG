@@ -58,14 +58,15 @@ $footer-background-color: $footer-background;
     url("../images/Washington-DC-Capitol.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  min-width: 900px;
 }
 
 .hero-mission {
-  max-width: 40%;
+  /* max-width: 40%;
   min-width: 350px;
   position: absolute;
   left: 40px;
-  top: 150px;
+  top: 150px; */
   font-size: 2.5em;
 }
 
