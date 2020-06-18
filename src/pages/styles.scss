@@ -8,6 +8,9 @@ $tan: hsl(53, 25%, 87%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
 $text-black: hsl(3, 0%, 0%);
+$primary: $green;
+$ico-borders: #c4c4c4;
+$shadow: rgba(0, 0, 0, 0.25);
 
 //fonts
 $family-primary: Roboto, sans-serif;
@@ -34,6 +37,21 @@ $footer-background-color: $footer-background;
 
 //helper classes
 
+//element styles
+
+body {
+  background-color: $green;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: $tan;
+}
+
 //custom classes
 .logo {
   display: block;
@@ -55,7 +73,7 @@ $footer-background-color: $footer-background;
 
 .has-hero-img {
   background: linear-gradient(rgba(40, 57, 68, 0.61), rgba(40, 57, 68, 0.61)),
-    url("../images/Washington-DC-Capitol.png");
+    url("../images/homepage/Washington-DC-Capitol.png");
   background-repeat: no-repeat;
   background-size: 100%;
   min-width: 900px;
@@ -72,17 +90,7 @@ $footer-background-color: $footer-background;
 
 .hero-about {
   padding: 40px 20px 60px 20px;
-  background-color: $green;
   color: $tan;
-}
-
-.hero-about h1 {
-  text-align: center;
-  font-weight: 900;
-  font-size: 2.5em;
-  line-height: 56px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .hero-about p {
@@ -90,4 +98,44 @@ $footer-background-color: $footer-background;
   font-size: 1.5em;
   line-height: 1.5em;
   padding: 0px 50px;
+}
+
+.join-button {
+  display: flex;
+  border: 3px solid $tan;
+  border-radius: 20px;
+  color: $tan;
+  width: 30%;
+  min-width: 250px;
+  margin: 15px 50px;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.join-button-link {
+  background-color: $red;
+  color: $tan;
+  font-size: 2.5em;
+  flex: 4 0;
+  text-align: center;
+  height: 100%;
+}
+
+.btn-arrow {
+  display: flex;
+  flex: 1 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsors-wrapper {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.sponsor-ico {
+  border: 5px solid $ico-borders;
+  box-shadow: 0px 5px 2px $shadow;
 }

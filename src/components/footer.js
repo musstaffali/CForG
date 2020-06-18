@@ -36,6 +36,7 @@ const FooterNav = () => (
     <a
       href="https://www.codeforamerica.org/"
       target="_blank"
+      rel="noreferrer"
       className="navbar-item"
     >
       CODE FOR AMERICA
