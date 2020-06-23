@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../images/CfGLogoWhite.png"
+import logo from "../images/FooterLogo.png"
 import { Link } from "gatsby"
 
 const Footer = () => {

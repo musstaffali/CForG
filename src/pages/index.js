@@ -9,10 +9,20 @@ import ibmico from "../images/sponsors/ibm.jpg"
 import cfaico from "../images/sponsors/cfa.jpg"
 import flaghouse1 from "../images/homepage/flags-on-homes1.jpg"
 import flaghouse2 from "../images/homepage/flags-on-homes2.jpg"
+import slackico from "../images/social/slack_icon.svg"
+import githubico from "../images/social/github_icon.svg"
+import meetupico from "../images/social/meetup_icon.svg"
+import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Code for Greensboro - Local Code for America Brigade" />
+    <Helmet>
+      <script
+        src="https://kit.fontawesome.com/fbb5c49af7.js"
+        crossorigin="anonymous"
+      ></script>
+    </Helmet>
     <section className="hero is-success is-halfheight has-hero-img">
       <div className="hero-body">
         <div className="column is-two-fifths">
@@ -47,7 +57,9 @@ const IndexPage = () => (
             <Link className="join-button-link" to="/join">
               Join Us
             </Link>
-            <div className="btn-arrow">ARWICON</div>
+            <div className="btn-arrow">
+              <i class="fas fa-arrow-right fa-2x"></i>
+            </div>
           </div>
         </div>
         <div className="column is-one-fifth">
@@ -57,11 +69,11 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section>
+    <section className="sponsors">
       <div className="container">
         <h1>SPONSORS</h1>
       </div>
-      <div className="sponsors-wrapper">
+      <div className="icons-wrapper">
         <figure className="image is-96x96">
           <img class="is-rounded sponsor-ico" src={hqico} alt="" />
         </figure>
@@ -74,6 +86,86 @@ const IndexPage = () => (
         <figure className="level-item image is-96x96">
           <img class="is-rounded sponsor-ico" src={cfaico} alt="" />
         </figure>
+      </div>
+    </section>
+    <section className="join-social">
+      <div className="join-platforms">
+        <div className="container">
+          <h1>JOIN THE GROUP</h1>
+          <p>
+            If you want to improve the well-being of Greensboro, these platforms
+            are the best way to meet us and volunteer for our many current
+            projects.
+          </p>
+        </div>
+        <div className="icons-wrapper columns is-centered is-vcentered">
+          <div className="column is-one-third">
+            <img src={slackico} alt="Slack Logo" />
+            <div className="join-button">
+              <a
+                className="join-button-link"
+                href="https://bit.ly/cfgso-slack"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Join Us
+              </a>
+              <div className="btn-arrow">
+                <i class="fas fa-arrow-right fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div className="column is-one-third">
+            <img src={githubico} alt="GitHub Logo" />
+            <div className="join-button">
+              <a
+                className="join-button-link"
+                href="https://github.com/codeforgso"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Join Us
+              </a>
+              <div className="btn-arrow">
+                <i class="fas fa-arrow-right fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div className="column is-one-third">
+            <img src={meetupico} alt="Meetup Logo" />
+            <div className="join-button">
+              <a
+                className="join-button-link"
+                href="https://www.meetup.com/Code-for-Greensboro/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Join Us
+              </a>
+              <div className="btn-arrow">
+                <i class="fas fa-arrow-right fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="donate-sponsor">
+      <div className="container">
+        <h1>DONATE OR SPONSOR US</h1>
+        <p>
+          Our organization would be nothing without the support of our generous
+          sponsors and donors. Whether you can donate $1 or $100, every bit
+          counts to keep Code for Greensboro serving the Triad community.{" "}
+        </p>
+      </div>
+      <div className="join-button">
+        <Link className="join-button-link" to="/donate">
+          Donate
+        </Link>
+        <div className="btn-arrow">
+          <i class="fas fa-arrow-right fa-2x"></i>
+        </div>
       </div>
     </section>
   </Layout>
