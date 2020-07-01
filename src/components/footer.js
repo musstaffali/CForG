@@ -17,7 +17,7 @@ const Footer = () => {
 }
 
 const FooterNav = () => (
-  <nav className="footer-nav">
+  <nav className="footer-nav is-flex-tablet">
     <Link to="/" className="navbar-item">
       HOME
     </Link>

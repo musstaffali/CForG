@@ -38,7 +38,7 @@ const IndexPage = () => (
         <h1>WHO WE ARE</h1>
       </div>
       <div className="columns">
-        <div className="column is-one-fifth">
+        <div className="column is-one-fifth is-hidden-mobile">
           <figure className="image is-square">
             <image src={flaghouse1} alt="" />
           </figure>
@@ -62,7 +62,7 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-        <div className="column is-one-fifth">
+        <div className="column is-one-fifth is-hidden-mobile">
           <figure className="image is-square">
             <image src={flaghouse2} alt="" />
           </figure>
@@ -77,18 +77,18 @@ const IndexPage = () => (
         <figure className="image is-96x96">
           <img class="is-rounded sponsor-ico" src={hqico} alt="" />
         </figure>
-        <figure className="level-item image is-96x96">
+        <figure className="image is-96x96">
           <img class="is-rounded sponsor-ico" src={allegacyico} alt="" />
         </figure>
-        <figure className="level-item image is-96x96">
+        <figure className="image is-96x96">
           <img class="is-rounded sponsor-ico" src={ibmico} alt="" />
         </figure>
-        <figure className="level-item image is-96x96">
+        <figure className="image is-96x96">
           <img class="is-rounded sponsor-ico" src={cfaico} alt="" />
         </figure>
       </div>
     </section>
-    <section className="join-social">
+    <section>
       <div className="join-platforms">
         <div className="container">
           <h1>JOIN THE GROUP</h1>
@@ -98,8 +98,8 @@ const IndexPage = () => (
             projects.
           </p>
         </div>
-        <div className="icons-wrapper columns is-centered is-vcentered">
-          <div className="column is-one-third">
+        <div className="columns">
+          <div className="column">
             <img src={slackico} alt="Slack Logo" />
             <div className="join-button">
               <a
@@ -115,7 +115,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="column is-one-third">
+          <div className="column">
             <img src={githubico} alt="GitHub Logo" />
             <div className="join-button">
               <a
@@ -131,7 +131,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="column is-one-third">
+          <div className="column">
             <img src={meetupico} alt="Meetup Logo" />
             <div className="join-button">
               <a
@@ -159,14 +159,18 @@ const IndexPage = () => (
           counts to keep Code for Greensboro serving the Triad community.{" "}
         </p>
       </div>
-      <div className="join-button">
-        <Link className="join-button-link" to="/donate">
-          Donate
-        </Link>
-        <div className="btn-arrow">
-          <i class="fas fa-arrow-right fa-2x"></i>
+      <a
+        href="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Code%20for%20Greensboro"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className="join-button">
+          <div class="join-button-link">Donate</div>
+          <div className="btn-arrow">
+            <i class="fas fa-arrow-right fa-2x"></i>
+          </div>
         </div>
-      </div>
+      </a>
     </section>
   </Layout>
 )
