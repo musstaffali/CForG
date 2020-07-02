@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../images/CfGLogoWhite.png"
+import logo from "../images/FooterLogo.png"
 import { Link } from "gatsby"
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
 }
 
 const FooterNav = () => (
-  <nav className="footer-nav">
+  <nav className="footer-nav is-flex-tablet">
     <Link to="/" className="navbar-item">
       HOME
     </Link>
@@ -36,6 +36,7 @@ const FooterNav = () => (
     <a
       href="https://www.codeforamerica.org/"
       target="_blank"
+      rel="noreferrer"
       className="navbar-item"
     >
       CODE FOR AMERICA

@@ -53,9 +53,14 @@ function Nav(props) {
             OUR PROJECTS
           </Link>
 
-          <Link className="navbar-item" to="/donate">
+          <a
+            href="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Code%20for%20Greensboro"
+            className="navbar-item"
+            target="_blank"
+            rel="noreferrer"
+          >
             DONATE
-          </Link>
+          </a>
 
           <Link className="navbar-item" to="/join">
             JOIN US
