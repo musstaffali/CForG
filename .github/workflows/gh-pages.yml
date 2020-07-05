@@ -20,30 +20,30 @@ jobs:
     steps:
       # Checks out git repo
       - name: Checkout git
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       # Sets up node in the runner
       - name: Setup Node.js
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
 
       # Installs the dependencies in the runner
       - name: Install deps
-      - run: | 
+        run: | 
           npm install -g gatsby-cli
           npm install -g gh-pages
           npm ci
 
       # Builds the gatsby files in public folder
       - name: Gatsby build
-      - run: gatsby build
+        run: gatsby build
 
       # action to push the public folder to gh-pages branch
       # and trigger pages deployment
       - name: GitHub Pages action
-      - uses: peaceiris/actions-gh-pages@v3.6.1
+        uses: peaceiris/actions-gh-pages@v3.6.1
         with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
         
