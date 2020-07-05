@@ -27,4 +27,4 @@ jobs:
           npm install -g gatsby-cli
           npm install -g gh-pages
           npm ci
-          npm run deploy
+          npm run ci-deploy
