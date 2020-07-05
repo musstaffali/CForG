@@ -33,7 +33,6 @@
     "build": "gatsby build",
     "predeploy": "gatsby build",
     "deploy": "gh-pages -d public",
-    "ci-deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://${{GITHUB_TOKEN}}@github.com/codeforgso/website.git",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
