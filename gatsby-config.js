@@ -1,5 +1,5 @@
 module.exports = {
-  //pathPrefix: "/website",
+  // pathPrefix: "/website",
   siteMetadata: {
     title: `Code for Greensboro - A Code For America Brigade`,
     description: `The Brigade Website for Code for GSO`,
