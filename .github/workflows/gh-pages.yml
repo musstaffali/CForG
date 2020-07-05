@@ -24,7 +24,7 @@ jobs:
 
       # Sets up node in the runner
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -42,7 +42,7 @@ jobs:
       # action to push the public folder to gh-pages branch
       # and trigger pages deployment
       - name: GitHub Pages action
-        uses: peaceiris/actions-gh-pages@v3.6.1
+      - uses: peaceiris/actions-gh-pages@v3.6.1
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             publish_dir: ./public
