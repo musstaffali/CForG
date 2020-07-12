@@ -1,5 +1,4 @@
 import React from "react"
-import arrow_rt from "../images/icons/arrow-right.svg"
 import styles from "./oval_button.module.scss"
 import { Link } from "gatsby"
 

@@ -2,7 +2,6 @@ import React from "react"
 import "./styles.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 import hqico from "../images/sponsors/hqgso.jpg"
 import allegacyico from "../images/sponsors/allegacy.jpg"
 import ibmico from "../images/sponsors/ibmico.jpg"
@@ -53,7 +52,7 @@ const IndexPage = () => (
             something else to contribute, we’d love to have you come along with
             us on this journey.{" "}
           </p>
-          <OvalButton to="/join" text="Join Us" />
+          <OvalButton type="internal" to="/join" text="Join Us" />
         </div>
         <div className="column is-one-fifth is-hidden-mobile">
           <figure className="image is-square">
