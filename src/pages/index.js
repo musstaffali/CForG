@@ -13,7 +13,7 @@ import slackico from "../images/social/slack_icon.svg"
 import githubico from "../images/social/github_icon.svg"
 import meetupico from "../images/social/meetup_icon.svg"
 import { Helmet } from "react-helmet"
-
+import OvalButton from "../components/oval_button"
 const IndexPage = () => (
   <Layout>
     <SEO title="Code for Greensboro - Local Code for America Brigade" />
@@ -53,14 +53,7 @@ const IndexPage = () => (
             something else to contribute, we’d love to have you come along with
             us on this journey.{" "}
           </p>
-          <div className="join-button">
-            <Link className="join-button-link" to="/join">
-              Join Us
-            </Link>
-            <div className="btn-arrow">
-              <i class="fas fa-arrow-right fa-2x"></i>
-            </div>
-          </div>
+          <OvalButton to="/join" text="Join Us" />
         </div>
         <div className="column is-one-fifth is-hidden-mobile">
           <figure className="image is-square">
@@ -101,51 +94,27 @@ const IndexPage = () => (
         <div className="columns">
           <div className="column">
             <img src={slackico} alt="Slack Logo" />
-            <div className="join-button">
-              <a
-                className="join-button-link"
-                href="https://bit.ly/cfgso-slack"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Join Us
-              </a>
-              <div className="btn-arrow">
-                <i class="fas fa-arrow-right fa-2x"></i>
-              </div>
-            </div>
+            <OvalButton
+              text="Join Us"
+              to="https://bit.ly/cfgso-slack"
+              external="true"
+            />
           </div>
           <div className="column">
             <img src={githubico} alt="GitHub Logo" />
-            <div className="join-button">
-              <a
-                className="join-button-link"
-                href="https://github.com/codeforgso"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Join Us
-              </a>
-              <div className="btn-arrow">
-                <i class="fas fa-arrow-right fa-2x"></i>
-              </div>
-            </div>
+            <OvalButton
+              text="Join Us"
+              to="https://github.com/codeforgso"
+              external="true"
+            />
           </div>
           <div className="column">
             <img src={meetupico} alt="Meetup Logo" />
-            <div className="join-button">
-              <a
-                className="join-button-link"
-                href="https://www.meetup.com/Code-for-Greensboro/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Join Us
-              </a>
-              <div className="btn-arrow">
-                <i class="fas fa-arrow-right fa-2x"></i>
-              </div>
-            </div>
+            <OvalButton
+              text="Join Us"
+              to="https://www.meetup.com/Code-for-Greensboro/"
+              external="true"
+            />
           </div>
         </div>
       </div>
@@ -159,18 +128,11 @@ const IndexPage = () => (
           counts to keep Code for Greensboro serving the Triad community.{" "}
         </p>
       </div>
-      <a
-        href="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Code%20for%20Greensboro"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div className="join-button">
-          <div class="join-button-link">Donate</div>
-          <div className="btn-arrow">
-            <i class="fas fa-arrow-right fa-2x"></i>
-          </div>
-        </div>
-      </a>
+      <OvalButton
+        text="Donate"
+        to="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Code%20for%20Greensboro"
+        external="true"
+      />
     </section>
   </Layout>
 )
