@@ -54,7 +54,7 @@ function Nav(props) {
           </Link>
 
           <a
-            href="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Code%20for%20Greensboro"
+            href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Greensboro&utm_source=CodeforGreensboroSite"
             className="navbar-item"
             target="_blank"
             rel="noreferrer"
