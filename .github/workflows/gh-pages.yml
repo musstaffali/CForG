@@ -1,7 +1,7 @@
 name: Gatsby build and publish to gh-pages
 
 on:
-  pull_request:
+  push:
     branches: 
     - main
 
