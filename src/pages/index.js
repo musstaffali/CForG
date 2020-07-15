@@ -129,7 +129,7 @@ const IndexPage = () => (
       </div>
       <OvalButton
         text="Donate"
-        to="https://secure.codeforamerica.org/page/contribute/donate-to-a-brigade-today?source_codes=Brigade-page&brigade=Code%20for%20Greensboro"
+        to="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Greensboro&utm_source=CodeforGreensboroSite"
         external="true"
       />
     </section>
