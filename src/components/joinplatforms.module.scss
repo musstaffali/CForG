@@ -1,0 +1,25 @@
+.join-platforms {
+  background-color: $tan;
+  padding: 20px 40px;
+}
+
+.join-platforms .icons-wrapper {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.join-platforms .join-button {
+  background-color: $green;
+}
+
+.join-platforms .columns {
+  margin-top: 0;
+  align-items: stretch;
+}
+
+.join-platforms .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}

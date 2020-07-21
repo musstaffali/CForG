@@ -5,9 +5,10 @@
 $red: hsl(9, 69%, 49%);
 $green: hsl(180, 76%, 29%);
 $tan: hsl(53, 25%, 87%);
+$gold: hsl(53, 19%, 44%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
-$text-black: hsl(3, 0%, 0%);
+$text-black: hsl(204, 26%, 21%);
 $primary: $green;
 $ico-borders: #c4c4c4;
 $shadow: rgba(0, 0, 0, 0.25);
@@ -16,7 +17,7 @@ $shadow: rgba(0, 0, 0, 0.25);
 $family-primary: Roboto, sans-serif;
 
 // title
-$title-color: $red;
+$title-color: $tan;
 $subtitle-color: $red;
 
 // navbar
@@ -40,16 +41,28 @@ $footer-background-color: $footer-background;
 //element styles
 
 body {
-  background-color: $green;
+  background-color: $tan;
 }
 
 h1 {
-  text-align: center;
   font-weight: 900;
-  font-size: 2.5em;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: $tan;
+  font-size: 36px;
+  line-height: 42px;
+  color: $red;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: $text-white;
+}
+
+p {
+  color: $text-black;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 25px;
 }
 
 //custom classes
@@ -77,59 +90,55 @@ h1 {
   background-size: cover;
 }
 
-.hero-mission {
-  font-size: 2.5em;
+.hero {
+  background-color: rgb(40, 57, 68);
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+  &-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    &.is-transparent {
+      opacity: 0.61;
+    }
+  }
+}
+
+.hero-title {
+  color: white;
+  font-size: 3em;
 }
 
 .hero-about {
-  padding: 40px 20px 60px 20px;
-  color: $tan;
+  padding: 25px;
 }
 
-.hero-about p {
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 0px 50px;
+.featured-title {
+  background-color: $green;
+  & h1 {
+    color: $tan;
+    padding: 25px;
+  }
 }
 
-.join-button {
-  display: flex;
-  border: 3px solid white;
-  border-radius: 20px;
-  color: white;
-  width: auto;
-  max-width: 300px;
-  white-space: nowrap;
-
-  margin: 15px 50px;
-  justify-content: flex-start;
-  overflow: hidden;
-}
-
-.join-button-link {
-  background-color: $red;
-  color: $tan;
-  font-size: 2.5em;
-  padding: 0 10px;
-  flex: 4 0;
-  text-align: center;
-  height: 100%;
-}
-
-.btn-arrow {
-  display: flex;
-  flex: 1 0;
-  padding: 0 10px;
-  align-items: center;
-  justify-content: center;
+.featured-project {
+  padding: 50px;
 }
 
 .sponsors {
+  padding: 25px;
+  background-color: $gold;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.sponsors * {
+  color: $tan;
 }
 
 .icons-wrapper {
@@ -145,58 +154,6 @@ h1 {
   box-shadow: 0px 5px 2px $shadow;
 }
 
-.join-platforms {
-  background-color: $tan;
-  padding: 20px 40px;
-}
-
-.join-platforms h1 {
-  color: $red;
-}
-
-.join-platforms p {
-  margin-top: 0.5em;
-  color: $green;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 0 25px;
-}
-
-.join-platforms .icons-wrapper {
-  width: 100%;
-  justify-content: space-around;
-}
-
-.join-platforms .join-button {
-  background-color: $green;
-}
-
-.join-platforms .columns {
-  margin-top: 0;
-  align-items: stretch;
-}
-
-.join-platforms .column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-
 .donate-sponsor {
   padding: 20px 40px;
-}
-
-.donate-sponsor p {
-  margin-top: 0.5em;
-  color: $tan;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 0 25px;
-}
-
-.donate-sponsor .join-button {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto 30px auto;
 }

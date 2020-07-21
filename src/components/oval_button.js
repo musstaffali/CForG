@@ -26,7 +26,7 @@ function OvalButton(props) {
     <div className={styles.btn}>
       {link}
       <div className={styles.arrow}>
-        <i class="fas fa-arrow-right fa-2x"></i>
+        <i className="fas fa-arrow-right fa-2x"></i>
       </div>
     </div>
   )
