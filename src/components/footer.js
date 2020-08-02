@@ -15,28 +15,22 @@ const Footer = () => {
 
 const FooterNav = () => (
   <nav className="footer-nav is-flex-tablet">
-    <Link to="/" className="navbar-item">
-      HOME
-    </Link>
     <Link to="/join" className="navbar-item">
-      JOIN US
-    </Link>
-    <a href="mailto:hello@codeforgreensboro.org" className="navbar-item">
-      E-MAIL US
-    </a>
-    <Link to="/conduct" className="navbar-item">
-      CODE OF CONDUCT
-    </Link>
-    <Link to="/resources" className="navbar-item">
-      RESOURCES
+      Join
     </Link>
     <a
-      href="https://www.codeforamerica.org/"
+      href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Greensboro&utm_source=CodeforGreensboroSite"
+      className="navbar-item"
       target="_blank"
       rel="noreferrer"
-      className="navbar-item"
     >
-      CODE FOR AMERICA
+      Donate
+    </a>
+    <Link to="/conduct" className="navbar-item">
+      Code of Conduct
+    </Link>
+    <a href="mailto:hello@codeforgreensboro.org" className="navbar-item">
+      Email us
     </a>
   </nav>
 )
