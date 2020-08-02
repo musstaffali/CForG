@@ -19,12 +19,14 @@ const IndexPage = () => (
         crossorigin="anonymous"
       ></script>
     </Helmet>
-    <section className="hero has-background">
+    <section className="hero is-halfheight has-background">
       <img className="hero-background is-transparent" src={herobg} alt="" />
-      <h1 className="hero-title is-overlay">
-        Civic Tech to serve greater Greensboro. No tech background needed, just
-        you and the community.
-      </h1>
+      <div className="hero-body is-overlay">
+        <h1 className="hero-title">
+          Civic Tech to serve greater Greensboro. <br></br>
+          No tech background needed, just you and the community.
+        </h1>
+      </div>
     </section>
     <section>
       <div className="container">
@@ -45,7 +47,7 @@ const IndexPage = () => (
       </div>
       <div className="column has-background-danger"></div>
     </div>
-    <div className="featured-project">
+    <section className="featured-project">
       <h2>Go Vote App</h2>
       <p>
         We are working on an app that not only helps people be registered voters
@@ -53,14 +55,16 @@ const IndexPage = () => (
         “Need to know” of the candidates in a comprehensive, bite-sized
         experience.
       </p>
-    </div>
-    <div>
-      <OvalButton
-        text="Join Project"
-        to="https://cfgso.slack.com/archives/C380GFJJ3"
-        external="true"
-      />
-    </div>
+      <div className="columns is-centered">
+        <div className="column is-half">
+          <OvalButton
+            text="Join Project"
+            to="https://cfgso.slack.com/archives/C380GFJJ3"
+            external="true"
+          />
+        </div>
+      </div>
+    </section>
     <section className="sponsors">
       <p>
         Code for Greensboro could not make it without the help of our community.
@@ -88,10 +92,13 @@ const IndexPage = () => (
           <figcaption>Code for America</figcaption>
         </figure>
       </div>
-      <OvalButton text="Sponsor Us" to="sponsor" external="false" />
+      <div className="columns is-centered">
+        <div className="column is-half">
+          <OvalButton text="Sponsor Us" to="sponsor" external="false" />
+        </div>
+      </div>
       <div className="container">
         <h1 className="has-text-centered">Individual Supporters</h1>
-        {/*insert variable or query for supporter list here*/}
       </div>
     </section>
   </Layout>
