@@ -26,9 +26,14 @@ const FooterNav = () => (
     >
       Donate
     </a>
-    <Link to="/conduct" className="navbar-item">
+    <a
+      href="https://github.com/codeforamerica/codeofconduct"
+      className="navbar-item"
+      target="_blank"
+      rel="noreferrer"
+    >
       Code of Conduct
-    </Link>
+    </a>
     <a href="mailto:hello@codeforgreensboro.org" className="navbar-item">
       Email us
     </a>
