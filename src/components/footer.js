@@ -5,13 +5,10 @@ import { Link } from "gatsby"
 const Footer = () => {
   return (
     <footer className="footer">
+      <FooterNav />
       <div className="content has-text-centered">
-        <div className="logowrap">
-          <img src={logo} alt="Logo" className="logo" />
-        </div>
         <p>&copy; 2020 Code for Greensboro</p>
       </div>
-      <FooterNav />
     </footer>
   )
 }

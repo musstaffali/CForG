@@ -4,6 +4,7 @@
 // app colors
 $red: hsl(9, 69%, 49%);
 $green: hsl(180, 76%, 29%);
+$darkgreen: hsl(180, 100%, 10%);
 $tan: hsl(53, 25%, 87%);
 $gold: hsl(53, 19%, 44%);
 $lightgreen: hsl(180, 76%, 40%);
@@ -14,6 +15,7 @@ $ico-borders: #c4c4c4;
 $shadow: rgba(0, 0, 0, 0.25);
 
 //fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 $family-primary: Roboto, sans-serif;
 
 // title
@@ -23,12 +25,11 @@ $subtitle-color: $red;
 // navbar
 $navbar-background-color: $green;
 $navbar-item-hover-background-color: $lightgreen;
-$navbar-item-color: $text-white;
-$navbar-item-hover-color: $text-black;
+$navbar-item-color: $tan;
+$navbar-item-hover-color: $darkgreen;
 
 // footer
-$footer-background: hsl(180, 100%, 10%);
-$footer-background-color: $footer-background;
+$footer-background-color: $tan;
 
 @import "~bulma/bulma.sass";
 
@@ -83,6 +84,11 @@ p {
   justify-content: center;
 }
 
+.footer {
+  & a {
+    color: $red;
+  }
+}
 .has-hero-img {
   background: linear-gradient(rgba(40, 57, 68, 0.61), rgba(40, 57, 68, 0.61)),
     url("../images/homepage/Washington-DC-Capitol.png");
@@ -91,7 +97,9 @@ p {
 }
 
 .hero {
+  padding: 0px;
   background-color: rgb(40, 57, 68);
+  height: 225px;
   &.has-background {
     position: relative;
     overflow: hidden;
@@ -110,7 +118,8 @@ p {
 
 .hero-title {
   color: white;
-  font-size: 3em;
+  font-size: 24px;
+  padding: 25px;
 }
 
 .hero-about {
@@ -118,15 +127,16 @@ p {
 }
 
 .featured-title {
+  height: 100%;
   background-color: $green;
   & h1 {
     color: $tan;
-    padding: 25px;
+    padding: 20px 10px;
   }
 }
 
 .featured-project {
-  padding: 50px;
+  padding: 25px 50px 0px 25px;
 }
 
 .sponsors {
@@ -135,6 +145,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  & h1 {
+    text-align: center;
+  }
 }
 
 .sponsors * {
@@ -144,16 +157,36 @@ p {
 .icons-wrapper {
   margin: 20px auto;
   display: flex;
-  width: 60%;
   justify-content: space-around;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .sponsor-ico {
   border: 5px solid $ico-borders;
   box-shadow: 0px 5px 2px $shadow;
+  margin-bottom: 5px;
+}
+
+.captioned-ico {
+  margin-bottom: 3em;
 }
 
 .donate-sponsor {
   padding: 20px 40px;
+}
+
+/*about page*/
+
+.leaders {
+  background-color: $darkgreen;
+  color: $tan;
+  text-align: center;
+  & h1 {
+    color: $tan;
+  }
+}
+
+section {
+  padding: 20px;
 }

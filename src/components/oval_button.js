@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 function OvalButton(props) {
   let link = ""
-  if (props.external) {
+  if (props.external == "true") {
     link = (
       <a
         className={styles.link}

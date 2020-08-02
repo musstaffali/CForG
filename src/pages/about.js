@@ -1,9 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
-import OvalButton from "../components/oval_button"
+import ethan from "../images/leaders/ethan.jpg"
+import heather from "../images/leaders/heather.jpg"
+import jordan from "../images/leaders/jordan.jpg"
+import rob from "../images/leaders/rob.jpg"
+import schaffer from "../images/leaders/schaffer.jpg"
+import erich from "../images/leaders/erich.jpg"
+import trey from "../images/leaders/trey.jpg"
+import tim from "../images/leaders/tim.jpg"
+
 const About = () => (
   <Layout>
-    <section>
+    <section className="blurb">
       <h1>Who we are</h1>
       <p>
         Code for Greensboro, also known as Code for GSO for short, is an
@@ -12,7 +20,7 @@ const About = () => (
         Civic Tech to solve community needs.
       </p>
     </section>
-    <section>
+    <section className="blurb">
       <h1>What is Civic Tech?</h1>
       <p>
         “There is no one ‘industry standard’ definition of civic tech...” -Stacy
@@ -34,14 +42,43 @@ const About = () => (
       </p>
     </section>
     <section className="leaders">
-      <h1>Leaders</h1>
-      <p>**BUILD LEADERS COMPONENT HERE**</p>
-      <OvalButton
-        text="Join Us"
-        external="true"
-        to="https://bit.ly/cfgso-slack"
-      />
-      >
+      <div className="container">
+        <h1>Leaders</h1>
+      </div>
+      <div className="icons-wrapper">
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={ethan} alt="" />
+          <figcaption>Ethan McElvaney</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={heather} alt="" />
+          <figcaption>Heather Gallop</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={jordan} alt="" />
+          <figcaption>Jordan Robinson</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={rob} alt="" />
+          <figcaption>Rob Martin</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={schaffer} alt="" />
+          <figcaption>Schaffer Stewart</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={erich} alt="" />
+          <figcaption>Erich Keil</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={trey} alt="" />
+          <figcaption>Trey Botard</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={tim} alt="" />
+          <figcaption>Tim Leisman</figcaption>
+        </figure>
+      </div>
     </section>
   </Layout>
 )
