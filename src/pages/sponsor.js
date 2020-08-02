@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const Sponsor = () => (
   <Layout>
-    <h1>Sponsor Us Page</h1>
+    <h1>COMING SOON - Sponsor Us Page</h1>
   </Layout>
 )
 
