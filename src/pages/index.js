@@ -26,7 +26,7 @@ const IndexPage = () => (
         you and the community.
       </h1>
     </section>
-    <section className="hero-about">
+    <section>
       <div className="container">
         <h1>Mission</h1>
       </div>
