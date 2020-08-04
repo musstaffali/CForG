@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 function OvalButton(props) {
   let link = ""
-  if (props.external) {
+  if (props.external === "true") {
     link = (
       <a
         className={styles.link}
@@ -26,7 +26,7 @@ function OvalButton(props) {
     <div className={styles.btn}>
       {link}
       <div className={styles.arrow}>
-        <i class="fas fa-arrow-right fa-2x"></i>
+        <i className="fas fa-arrow-right fa-2x"></i>
       </div>
     </div>
   )

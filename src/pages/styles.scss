@@ -4,30 +4,32 @@
 // app colors
 $red: hsl(9, 69%, 49%);
 $green: hsl(180, 76%, 29%);
+$darkgreen: hsl(180, 100%, 10%);
 $tan: hsl(53, 25%, 87%);
+$gold: hsl(53, 19%, 44%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
-$text-black: hsl(3, 0%, 0%);
+$text-black: hsl(204, 26%, 21%);
 $primary: $green;
 $ico-borders: #c4c4c4;
 $shadow: rgba(0, 0, 0, 0.25);
 
 //fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 $family-primary: Roboto, sans-serif;
 
 // title
-$title-color: $red;
+$title-color: $tan;
 $subtitle-color: $red;
 
 // navbar
 $navbar-background-color: $green;
 $navbar-item-hover-background-color: $lightgreen;
-$navbar-item-color: $text-white;
-$navbar-item-hover-color: $text-black;
+$navbar-item-color: $tan;
+$navbar-item-hover-color: $darkgreen;
 
 // footer
-$footer-background: hsl(180, 100%, 10%);
-$footer-background-color: $footer-background;
+$footer-background-color: $tan;
 
 @import "~bulma/bulma.sass";
 
@@ -40,19 +42,36 @@ $footer-background-color: $footer-background;
 //element styles
 
 body {
-  background-color: $green;
+  background-color: $tan;
+}
+
+section {
+  padding: 20px;
 }
 
 h1 {
-  text-align: center;
   font-weight: 900;
-  font-size: 2.5em;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: $tan;
+  font-size: 36px;
+  line-height: 42px;
+  color: $red;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: $text-white;
+}
+
+p {
+  color: $text-black;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 25px;
 }
 
 //custom classes
+/*header and footer*/
 .logo {
   display: block;
   margin: 5px 10px 5px 5px;
@@ -70,133 +89,97 @@ h1 {
   justify-content: center;
 }
 
-.has-hero-img {
-  background: linear-gradient(rgba(40, 57, 68, 0.61), rgba(40, 57, 68, 0.61)),
-    url("../images/homepage/Washington-DC-Capitol.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.footer {
+  & a {
+    color: $red;
+  }
 }
 
-.hero-mission {
-  font-size: 2.5em;
+/*hero tweaks*/
+.hero {
+  padding: 0px;
+  background-color: rgb(40, 57, 68);
+  height: 250px;
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+  &-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    &.is-transparent {
+      opacity: 0.61;
+    }
+  }
 }
 
-.hero-about {
-  padding: 40px 20px 60px 20px;
-  color: $tan;
-}
-
-.hero-about p {
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 0px 50px;
-}
-
-.join-button {
-  display: flex;
-  border: 3px solid white;
-  border-radius: 20px;
+.hero-title {
+  max-width: 600px;
   color: white;
-  width: auto;
-  max-width: 300px;
-  white-space: nowrap;
-
-  margin: 15px 50px;
-  justify-content: flex-start;
-  overflow: hidden;
+  font-size: 28px;
 }
 
-.join-button-link {
-  background-color: $red;
+/*icons and badges*/
+.sponsors * {
   color: $tan;
-  font-size: 2.5em;
-  padding: 0 10px;
-  flex: 4 0;
-  text-align: center;
-  height: 100%;
-}
-
-.btn-arrow {
-  display: flex;
-  flex: 1 0;
-  padding: 0 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.sponsors {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .icons-wrapper {
   margin: 20px auto;
   display: flex;
-  width: 60%;
   justify-content: space-around;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .sponsor-ico {
   border: 5px solid $ico-borders;
   box-shadow: 0px 5px 2px $shadow;
+  margin-bottom: 5px;
 }
 
-.join-platforms {
-  background-color: $tan;
-  padding: 20px 40px;
-}
-
-.join-platforms h1 {
-  color: $red;
-}
-
-.join-platforms p {
-  margin-top: 0.5em;
-  color: $green;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 0 25px;
-}
-
-.join-platforms .icons-wrapper {
-  width: 100%;
-  justify-content: space-around;
-}
-
-.join-platforms .join-button {
-  background-color: $green;
-}
-
-.join-platforms .columns {
-  margin-top: 0;
-  align-items: stretch;
-}
-
-.join-platforms .column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+.captioned-ico {
+  margin: 5px;
+  margin-bottom: 3em;
+  text-align: center;
 }
 
 .donate-sponsor {
   padding: 20px 40px;
 }
 
-.donate-sponsor p {
-  margin-top: 0.5em;
-  color: $tan;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 0 25px;
+/*********PAGE SPECIFIC - COULD REFACTOR TO MODULES*********/
+
+/*homepage*/
+.featured-title {
+  height: 100%;
+  background-color: $green;
+  & h1 {
+    color: $tan;
+    padding: 20px 10px;
+  }
 }
 
-.donate-sponsor .join-button {
+.sponsors {
+  padding: 25px;
+  background-color: $gold;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 20px auto 30px auto;
+  & h1 {
+    text-align: center;
+  }
+}
+
+/*about page*/
+.leaders {
+  background-color: $darkgreen;
+  color: $tan;
+  text-align: center;
+  & h1 {
+    color: $tan;
+  }
 }

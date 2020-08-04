@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const OurProjects = () => (
   <Layout>
-    <h1>Our Projects Page</h1>
+    <h1>COMING SOON - Our Projects Page</h1>
   </Layout>
 )
 

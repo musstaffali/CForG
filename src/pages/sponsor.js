@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 
-const Conduct = () => (
+const Sponsor = () => (
   <Layout>
-    <h1>Code of Conduct</h1>
+    <h1>COMING SOON - Sponsor Us Page</h1>
   </Layout>
 )
 
-export default Conduct
+export default Sponsor

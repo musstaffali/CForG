@@ -5,41 +5,37 @@ import { Link } from "gatsby"
 const Footer = () => {
   return (
     <footer className="footer">
+      <FooterNav />
       <div className="content has-text-centered">
-        <div className="logowrap">
-          <img src={logo} alt="Logo" className="logo" />
-        </div>
         <p>&copy; 2020 Code for Greensboro</p>
       </div>
-      <FooterNav />
     </footer>
   )
 }
 
 const FooterNav = () => (
   <nav className="footer-nav is-flex-tablet">
-    <Link to="/" className="navbar-item">
-      HOME
-    </Link>
     <Link to="/join" className="navbar-item">
-      JOIN US
-    </Link>
-    <a href="mailto:hello@codeforgreensboro.org" className="navbar-item">
-      E-MAIL US
-    </a>
-    <Link to="/conduct" className="navbar-item">
-      CODE OF CONDUCT
-    </Link>
-    <Link to="/resources" className="navbar-item">
-      RESOURCES
+      Join
     </Link>
     <a
-      href="https://www.codeforamerica.org/"
+      href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Greensboro&utm_source=CodeforGreensboroSite"
+      className="navbar-item"
       target="_blank"
       rel="noreferrer"
-      className="navbar-item"
     >
-      CODE FOR AMERICA
+      Donate
+    </a>
+    <a
+      href="https://github.com/codeforamerica/codeofconduct"
+      className="navbar-item"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Code of Conduct
+    </a>
+    <a href="mailto:hello@codeforgreensboro.org" className="navbar-item">
+      Email us
     </a>
   </nav>
 )
