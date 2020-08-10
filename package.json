@@ -2,7 +2,7 @@
   "name": "codeforgso-website",
   "private": true,
   "description": "Code for Greensboro Brigade Website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Code for GSO Brigade",
   "dependencies": {
     "bulma": "^0.8.2",
@@ -48,5 +48,5 @@
   "bugs": {
     "url": "https://github.com/codeforgso/website/issues"
   },
-  "homepage": "codeforgso.github.io/website"
+  "homepage": "https://codeforgreensboro.org/"
 }
