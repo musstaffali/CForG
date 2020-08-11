@@ -3,7 +3,102 @@ import Layout from "../components/layout"
 
 const Resources = () => (
   <Layout>
-    <h1>COMING SOON - Resources Page</h1>
+    <section>
+      <h1>Coding and Tech</h1>
+      <p>
+        <ul>
+          <li>
+            <a href="https://www.w3schools.com/">w3 schools</a>
+          </li>
+          <li>
+            <a href="https://www.freecodecamp.org/">Free Code Camp</a>
+          </li>
+          <li>
+            <a href="https://javascript.info/">Javascript.info</a>
+          </li>
+          <li>
+            <a href="https://www.gatsbyjs.org/">Gatsby</a>
+          </li>
+          <li>
+            <a href="https://bulma.io/">Bulma</a>
+          </li>
+          <li>
+            <a href="https://getbootstrap.com/">Bootstrap</a>
+          </li>
+          <li>
+            <a href="https://reactjs.org/">React.JS</a>
+          </li>
+          <li>
+            <a href="https://angular.io/">Angular</a>
+          </li>
+          <li>
+            <a href="https://material.io/">Material Design</a>
+          </li>
+          <li>
+            <a href="https://developers.google.com/fonts">Google Fonts API</a>
+          </li>
+          <li>
+            <a href="https://docs.microsoft.com/en-us/learn/">
+              Microsoft Learn
+            </a>
+          </li>
+          <li>
+            <a href="https://developer.ibm.com/">IBM Developer</a>
+          </li>
+          <li>
+            <a href="https://www.codeforamerica.org/">Code For America</a>
+          </li>
+          <li>
+            <a href="https://codeforall.org/">Code For All</a>
+          </li>
+        </ul>
+      </p>
+    </section>
+    <section>
+      <h1>FAQ</h1>
+      <p className="is-italic">Do you need to have a background in tech?</p>
+      <p className="has-text-weight-bold">
+        NO. You do not have to have any knowledge of tech in your background to
+        join nor to be part of our projects. In fact, WE NEED people that
+        specialize in other fields like administration, art, social work,
+        education, and etc. to help solve other challenges each project faces,
+        as well as the challenges of the brigade.
+      </p>
+      <p className="is-italic">Can I get a job here?</p>
+      <p className="has-text-weight-bold">
+        Actually, we sometimes have job postings made by one of our members.
+        Sometimes they are opportunities someone found and shares with our
+        community on Slack. The brigade it self does not hold any paid positions
+        as everyone is volunteer-based. Our parent organization, Code for
+        America, hosts a job board you can check out{" "}
+        <a
+          href="https://jobs.codeforamerica.org/"
+          target="blank"
+          rel="noreferrer"
+        >
+          here.
+        </a>
+      </p>
+      <p className="is-italic">How often do you meet?</p>
+      <p className="has-text-weight-bold">
+        We meet at least once a month, if not twice a month. Typically we meet
+        inperson at HQ Greensboro but have been exploring virtual possibilities
+        especially in consideration to the COVID-19 Pandemic.
+      </p>
+      <p className="is-italic">
+        If you want to join Code for GSO, we have questions for you. You can
+        answer them{" "}
+        <a
+          className="has-text-weight-bold"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScssdp5lqB2IZ_BX1SnL68k0u9P7iAS8_2QPgkHDSEkSUFs6g/viewform?usp=pp_url"
+          target="blank"
+          rel="noreferrer"
+        >
+          {" "}
+          here.
+        </a>
+      </p>
+    </section>
   </Layout>
 )
 
