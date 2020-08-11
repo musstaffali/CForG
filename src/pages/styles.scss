@@ -183,3 +183,19 @@ p {
     color: $tan;
   }
 }
+
+/*join us page*/
+.join-title {
+  height: 100%;
+  background-color: $red;
+  & h2 {
+    color: $tan;
+    padding: 10px 15px;
+  }
+  &:hover {
+    background-color: darken($red, 10%);
+  }
+}
+.join-label {
+  margin: 15px 0px 5px 0px;
+}
