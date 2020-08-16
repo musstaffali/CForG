@@ -7,7 +7,7 @@ import herobg from "../images/homepage/Washington-DC-Capitol.png"
 import allegacyico from "../images/sponsors/allegacy.jpg"
 import ibmico from "../images/sponsors/ibmico.jpg"
 import cfaico from "../images/sponsors/cfa.jpg"
-
+import Project from "../components/project"
 import { Helmet } from "react-helmet"
 import OvalButton from "../components/oval_button"
 const IndexPage = () => (
@@ -41,29 +41,19 @@ const IndexPage = () => (
         love to have you come along with us on this journey.
       </p>
     </section>
-    <div className="columns is-mobile is-gapless">
+    <div className="columns is-mobile is-gapless mb-0">
       <div className="column is-four-fifths featured-title">
         <h1> Featured Project</h1>
       </div>
       <div className="column has-background-danger"></div>
     </div>
     <section className="featured-project">
-      <h2>Go Vote App</h2>
-      <p>
-        We are working on an app that not only helps people be registered voters
-        but to also know quickly where they vote, what voting areas, and all the
-        “Need to know” of the candidates in a comprehensive, bite-sized
-        experience.
-      </p>
-      <div className="columns is-centered">
-        <div className="column is-half">
-          <OvalButton
-            text="Join Project"
-            to="https://cfgso.slack.com/archives/C380GFJJ3"
-            external="true"
-          />
-        </div>
-      </div>
+    <Project
+      title="Go Vote App"
+      status="Active"
+      repo="https://github.com/codeforgso/GoVote"
+      body="We see a need for an app that helps people become voters with less barriers such as lack of education, transportation, and bias systems."
+    />
     </section>
     <section className="sponsors">
       <p>
@@ -99,6 +89,20 @@ const IndexPage = () => (
       </div>
       <div className="container">
         <h1 className="has-text-centered">Individual Supporters</h1>
+      </div>
+      <div className="columns ind-supporters is-mobile mt-3">
+        <div className="column has-text-centered">
+          Leonard
+        </div>
+        <div className="column has-text-centered">
+          Ari Gilliam
+        </div>
+        <div className="column has-text-centered">
+          Gabi Looney
+        </div>
+        <div className="column has-text-centered">
+          Ken Causey
+        </div>
       </div>
     </section>
   </Layout>
