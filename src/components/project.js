@@ -1,20 +1,21 @@
 import React from "react"
-import styles from "./project.module.css"
-import OvalButton from "./oval_button.js"
+import styles from "./project.module.scss"
+
 function Project(props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.title}>
-        <h1>{props.title}</h1>
+    <div className="card my-5">
+      <div className="card-header">
+        <h2 className="card-header-title">{props.title}</h2>
       </div>
-      <section>
-        <div className={styles.status}>{props.status}</div>
-        <a href={props.repo} target="blank" rel="noreferrer">
-          <h2 className={styles.ghlink}>GitHub</h2>
-        </a>
+        <div className={styles.status}>
+          Status: {props.status}
+        </div>
+        <div className="card-content">
         <p className={styles.body}>{props.body}</p>
-      </section>
-      <OvalButton text="Join Project" external="true" link={props.slack} />
+        </div>
+        <div className="card-footer">
+          <a className="card-footer-item dkblue" href={props.repo} target="blank" rel="noreferrer">Contribute Now</a>
+        </div>
     </div>
   )
 }
