@@ -7,6 +7,7 @@ $green: hsl(180, 76%, 29%);
 $darkgreen: hsl(180, 100%, 10%);
 $tan: hsl(53, 25%, 87%);
 $gold: hsl(53, 19%, 44%);
+$dkblue: 	hsl(204, 98%, 17%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
 $text-black: hsl(204, 26%, 21%);
@@ -30,6 +31,10 @@ $navbar-item-hover-color: $darkgreen;
 
 // footer
 $footer-background-color: $tan;
+
+//project cards
+$card-background-color: $tan;
+$card-header-color:$red;
 
 @import "~bulma/bulma.sass";
 
@@ -65,8 +70,8 @@ h2 {
 
 p {
   color: $text-black;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 1em;
+  line-height: 1.25em;
   margin: 25px;
 }
 
@@ -165,7 +170,7 @@ p {
 
 .sponsors {
   padding: 25px;
-  background-color: $gold;
+  background-color: $dkblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,6 +178,7 @@ p {
     text-align: center;
   }
 }
+
 
 /*about page*/
 .leaders {
@@ -198,4 +204,13 @@ p {
 }
 .join-label {
   margin: 15px 0px 5px 0px;
+}
+
+/*projects page*/
+.projects-container{
+  background-color:$gold;
+}
+
+.dkblue{
+  color:$dkblue
 }
