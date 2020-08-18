@@ -5,7 +5,6 @@ const Resources = () => (
   <Layout>
     <section>
       <h1>Coding and Tech</h1>
-      <p>
         <ul>
           <li>
             <a href="https://www.w3schools.com/">w3 schools</a>
@@ -52,7 +51,6 @@ const Resources = () => (
             <a href="https://codeforall.org/">Code For All</a>
           </li>
         </ul>
-      </p>
     </section>
     <section>
       <h1>FAQ</h1>
