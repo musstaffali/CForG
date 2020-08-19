@@ -45,8 +45,8 @@ function Nav(props) {
             ABOUT
           </Link>
 
-          <Link className="navbar-item" to="/resources">
-            RESOURCES
+          <Link className="navbar-item" to="/faq">
+            FAQ
           </Link>
 
           <Link className="navbar-item" to="/ourprojects">
