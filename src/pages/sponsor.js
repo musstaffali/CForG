@@ -10,18 +10,36 @@ const Sponsor = () => (
     <section className="sponsors">
       <h1>Corporate Sponsors</h1>
       <div className="icons-wrapper">
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={hqico} alt="" />
-          <figcaption>HQ Greensboro</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={allegacyico} alt="" />
-          <figcaption>Allegacy</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={ibmico} alt="" />
-          <figcaption>IBM</figcaption>
-        </figure>
+        <a href="https://hqgreensboro.com/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={hqico}
+              alt="HQ Greensboro icon"
+            />
+            <figcaption>HQ Greensboro</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.allegacy.org/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={allegacyico}
+              alt="Allegacy icon"
+            />
+            <figcaption>Allegacy</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.ibm.com/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={ibmico}
+              alt="IBM icon"
+            />
+            <figcaption>IBM</figcaption>
+          </figure>
+        </a>
       </div>
       <div className="columns is-centered">
         <div className="column is-half">

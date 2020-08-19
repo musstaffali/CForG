@@ -31,7 +31,7 @@ $navbar-item-color: $tan;
 $navbar-item-hover-color: $darkgreen;
 
 // footer
-$footer-background-color: $darkgreen;
+$footer-background-color: $tan;
 
 //project cards
 $card-background-color: $tan;
@@ -48,6 +48,7 @@ $card-header-color: $red;
   margin-left: auto;
   margin-right: auto;
 }
+
 //element styles
 
 body {
@@ -93,8 +94,18 @@ p {
   justify-content: center;
 }
 
-.footer * {
-  color: $text-white;
+.footer-nav {
+  justify-content: center;
+}
+
+.footer {
+  & a {
+    color: $red;
+  }
+}
+
+.card-footer-item:hover {
+  background-color: darken($tan, 10%);
 }
 
 /*hero tweaks*/
@@ -175,11 +186,6 @@ p {
   & h1 {
     text-align: center;
   }
-}
-
-.sponsorbutton {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*about page*/
