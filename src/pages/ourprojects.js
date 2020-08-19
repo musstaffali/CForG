@@ -6,7 +6,7 @@ const OurProjects = () => (
   <Layout>
     <section className="projects-container">
       <h1>Our Service to the Community</h1>
-      <p className="mx-5 my-5">
+      <p className="mx-3 my-3">
         Our projects are focused to the needs of the ocmmunity. We typically
         look for community partners who will sponsor the project by givin us
         critical feedback our solutions, their processes, and the tech involved.

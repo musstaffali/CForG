@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const Join = () => (
   <Layout>
-    <h1 className="mt-6 join-label">Slack</h1>
+    <h1 className="mt-5 join-label">Slack</h1>
     <a href="https://slack.codeforgreensboro.org/">
       <div className="columns is-mobile is-gapless mt-3">
         <div className="column is-four-fifths join-title">
@@ -23,7 +23,7 @@ const Join = () => (
     </a>
     <h1 className="mt-6 join-label">MeetUp</h1>
     <a href="https://www.meetup.com/Code-for-Greensboro/">
-      <div className="columns is-mobile is-gapless mt-3">
+      <div className="columns is-mobile is-gapless mt-3 mb-6">
         <div className="column is-four-fifths join-title">
           <h2>Meet Us</h2>
         </div>

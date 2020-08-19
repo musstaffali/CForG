@@ -131,6 +131,7 @@ p {
 
 .icons-wrapper {
   margin: 20px auto;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -183,7 +184,7 @@ p {
 
 /*about page*/
 .leaders {
-  background-color: $darkgreen;
+  background-color: $dkblue;
   color: $tan;
   text-align: center;
   & h1 {
