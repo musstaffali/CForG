@@ -5,16 +5,25 @@ import { Link } from "gatsby"
 const Footer = () => {
   return (
     <footer className="footer">
-      <FooterNav />
-      <div className="content has-text-centered">
-        <p>&copy; 2020 Code for Greensboro</p>
+      <div className="columns is-mobile">
+        <div className="column has-text-centered">
+          <img
+            className="image has-img-centered"
+            src={logo}
+            alt="CFGSO Logo"
+          ></img>
+          <p>&copy; 2020 Code for Greensboro</p>
+        </div>
+        <div className="column is-narrow">
+          <FooterNav />
+        </div>
       </div>
     </footer>
   )
 }
 
 const FooterNav = () => (
-  <nav className="footer-nav is-flex-tablet">
+  <nav className="footer-nav">
     <Link to="/join" className="navbar-item">
       Join
     </Link>

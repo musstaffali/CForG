@@ -31,7 +31,7 @@ $navbar-item-color: $tan;
 $navbar-item-hover-color: $darkgreen;
 
 // footer
-$footer-background-color: $tan;
+$footer-background-color: $darkgreen;
 
 //project cards
 $card-background-color: $tan;
@@ -44,7 +44,10 @@ $card-header-color: $red;
 // Bulma documentation: https://bulma.io/documentation/
 
 //helper classes
-
+.has-img-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
 //element styles
 
 body {
@@ -90,14 +93,8 @@ p {
   justify-content: center;
 }
 
-.footer-nav {
-  justify-content: center;
-}
-
-.footer {
-  & a {
-    color: $red;
-  }
+.footer * {
+  color: $text-white;
 }
 
 /*hero tweaks*/
