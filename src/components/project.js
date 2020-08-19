@@ -3,7 +3,7 @@ import styles from "./project.module.scss"
 
 function Project(props) {
   var footeritem
-  if (props.link != "") {
+  if (props.link !== "") {
     footeritem = (
       <a
         className="card-footer-item dkblue"
