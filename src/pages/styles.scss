@@ -54,6 +54,10 @@ body {
   background-color: $tan;
 }
 
+body * {
+  font-family: $family-primary;
+}
+
 section {
   padding: 20px;
 }
