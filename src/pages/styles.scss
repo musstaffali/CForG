@@ -6,8 +6,9 @@ $red: hsl(9, 69%, 49%);
 $green: hsl(180, 76%, 29%);
 $darkgreen: hsl(180, 100%, 10%);
 $tan: hsl(53, 25%, 87%);
+$darktan: hsl(54, 33%, 75%);
 $gold: hsl(53, 19%, 44%);
-$dkblue: 	hsl(204, 98%, 17%);
+$dkblue: hsl(204, 98%, 17%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
 $text-black: hsl(204, 26%, 21%);
@@ -30,11 +31,11 @@ $navbar-item-color: $tan;
 $navbar-item-hover-color: $darkgreen;
 
 // footer
-$footer-background-color: $tan;
+$footer-background-color: $darkgreen;
 
 //project cards
 $card-background-color: $tan;
-$card-header-color:$red;
+$card-header-color: $red;
 
 @import "~bulma/bulma.sass";
 
@@ -43,7 +44,10 @@ $card-header-color:$red;
 // Bulma documentation: https://bulma.io/documentation/
 
 //helper classes
-
+.has-img-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
 //element styles
 
 body {
@@ -72,7 +76,6 @@ p {
   color: $text-black;
   font-size: 1em;
   line-height: 1.25em;
-  margin: 25px;
 }
 
 //custom classes
@@ -90,14 +93,8 @@ p {
   justify-content: center;
 }
 
-.footer-nav {
-  justify-content: center;
-}
-
-.footer {
-  & a {
-    color: $red;
-  }
+.footer * {
+  color: $text-white;
 }
 
 /*hero tweaks*/
@@ -179,7 +176,6 @@ p {
   }
 }
 
-
 /*about page*/
 .leaders {
   background-color: $darkgreen;
@@ -207,10 +203,10 @@ p {
 }
 
 /*projects page*/
-.projects-container{
-  background-color:$gold;
+.projects-container {
+  background-color: $darktan;
 }
 
-.dkblue{
-  color:$dkblue
+.dkblue {
+  color: $dkblue;
 }

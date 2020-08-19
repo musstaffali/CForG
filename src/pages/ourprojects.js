@@ -5,24 +5,36 @@ import Project from "../components/project.js"
 const OurProjects = () => (
   <Layout>
     <section className="projects-container">
-    <Project
-      title="Go Vote App"
-      status="Active"
-      repo="https://github.com/codeforgso/GoVote"
-      body="We see a need for an app that helps people become voters with less barriers such as lack of education, transportation, and bias systems."
-    />
-    <Project
-      title="Expungement"
-      status="Active"
-      repo="https://docs.google.com/document/d/1EsfIT89gIpJcxy1sf0nuBPZYMyYJo6p214Bh_3ZsKuM/edit"
-      body="The brigade is looking for a way to give people easier access to resources and information that can help a person expunge any and all federal non-violent crimes from their record which is often a barrier for said individual to find employment."
-    />
-    <Project
-      title="Food Desert"
-      status="Active"
-      repo="https://github.com/codeforgso/triad-food-hardship"
-      body="Greensboro is currently suffering from food deserts that make it difficult for people to reach food markets without personal transporation. We are currently looking at how to make it easier for people to reach a food source without dependency on public or private transportation."
-    />
+      <h1>Our Service to the Community</h1>
+      <p className="mx-5 my-5">
+        Our projects are focused to the needs of the ocmmunity. We typically
+        look for community partners who will sponsor the project by givin us
+        critical feedback our solutions, their processes, and the tech involved.
+        In addition, we have a project lead who helps manage the project and its
+        progress. Also, we have an approver (someone in leadership) who approves
+        plans, ideas, and motions for the project.{" "}
+      </p>
+      <Project
+        title="Go Vote App"
+        status="Active"
+        link="https://github.com/codeforgso/GoVote"
+        linktxt="Contribute Now"
+        body="Our voter information app (2020 re-release coming soon!) that aims to help reduce barriers to voting for Greensboro and Guilford County residents."
+      />
+      <Project
+        title="Expungement"
+        status="Complete"
+        link="https://drive.google.com/file/d/1jPyCwdsrRI42_HNpWrSRPte_hYHLkEVP/view?usp=sharing"
+        linktxt="View the Document"
+        body="We worked with local organizations to create a journey map of the process Guilford County residents must go through to get their record expunged, which will undeservedly impede their access to employment. Tools like this help increase access to resources and information for this process."
+      />
+      <Project
+        title="Food Desert"
+        status="Inactive"
+        link=""
+        linktxt="Check Back Later"
+        body="Greensboro is currently suffering from food deserts that make it difficult for people to reach food markets without personal transporation. We are currently looking at how to make it easier for people to reach a food source without dependency on public or private transportation."
+      />
     </section>
   </Layout>
 )
