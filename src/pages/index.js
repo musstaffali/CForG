@@ -2,11 +2,10 @@ import React from "react"
 import "./styles.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import hqico from "../images/sponsors/hqgso.jpg"
+import hqico from "../images/sponsors/hqgso2.svg"
 import herobg from "../images/homepage/Washington-DC-Capitol.png"
 import allegacyico from "../images/sponsors/allegacy.jpg"
 import ibmico from "../images/sponsors/ibmico.jpg"
-import cfaico from "../images/sponsors/cfa.jpg"
 import Project from "../components/project"
 import { Helmet } from "react-helmet"
 import OvalButton from "../components/oval_button"
@@ -19,6 +18,7 @@ const IndexPage = () => (
         crossorigin="anonymous"
       ></script>
     </Helmet>
+
     <section className="hero is-halfheight has-background">
       <img className="hero-background is-transparent" src={herobg} alt="" />
       <div className="hero-body is-overlay">
@@ -28,33 +28,30 @@ const IndexPage = () => (
         </h1>
       </div>
     </section>
+
     <section>
-      <div className="container">
-        <h1>Mission</h1>
-      </div>
+      <h1>Mission</h1>
       <p>
-        Code for Greensboro is a brigade from a larger organization called Code
-        for America. It is our vision and mission to improve the well-being of
-        our communities in Greensboro through utilizing technology, process, and
-        (most importantly) the people. This is for us and operated by us. If
-        you’re a coder, designer, or have something else to contribute, we’d
-        love to have you come along with us on this journey.
+        Code for Greensboro is a local chapter of Code for America, a national 501(c)(3) nonprofit. We are dedicated to helping grow Greensboro’s tech community and improve local government services through the development of civic technology projects, the volunteer efforts of local members of our community, and by educating the public on opportunities to contribute to their community through technology.
       </p>
     </section>
+
     <div className="columns is-mobile is-gapless mb-0">
       <div className="column is-four-fifths featured-title">
         <h1> Featured Project</h1>
       </div>
       <div className="column has-background-danger"></div>
     </div>
+
     <section className="featured-project">
-    <Project
-      title="Go Vote App"
-      status="Active"
-      repo="https://github.com/codeforgso/GoVote"
-      body="We see a need for an app that helps people become voters with less barriers such as lack of education, transportation, and bias systems."
-    />
+      <Project
+        title="GoVoteGSO App"
+        status="Active"
+        repo="https://github.com/codeforgso/GoVote"
+        body="Our voter information app (2020 re-release coming soon!) which aims to reduce barriers to voting for Greensboro and Guilford County residents."
+      />
     </section>
+
     <section className="sponsors">
       <p>
         Code for Greensboro could not make it without the help of our community.
@@ -63,46 +60,28 @@ const IndexPage = () => (
         impact we have is dependent on those who help. Join us on Slack and at
         our meetups.
       </p>
+
       <h1>Corporate Sponsors</h1>
+
       <div className="icons-wrapper">
         <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={hqico} alt="" />
+          <img className="is-rounded sponsor-ico" src={hqico} alt="HQ Greensboro icon" />
           <figcaption>HQ Greensboro</figcaption>
         </figure>
+
         <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={allegacyico} alt="" />
+          <img className="is-rounded sponsor-ico" src={allegacyico} alt="Allegacy icon" />
           <figcaption>Allegacy</figcaption>
         </figure>
+
         <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={ibmico} alt="" />
+          <img className="is-rounded sponsor-ico" src={ibmico} alt="IBM icon" />
           <figcaption>IBM</figcaption>
         </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={cfaico} alt="" />
-          <figcaption>Code for America</figcaption>
-        </figure>
       </div>
-      <div className="columns is-centered">
-        <div className="column is-half">
-          <OvalButton text="Sponsor Us" to="sponsor" external="false" />
-        </div>
-      </div>
-      <div className="container">
-        <h1 className="has-text-centered">Individual Supporters</h1>
-      </div>
-      <div className="columns ind-supporters is-mobile mt-3">
-        <div className="column has-text-centered">
-          Leonard
-        </div>
-        <div className="column has-text-centered">
-          Ari Gilliam
-        </div>
-        <div className="column has-text-centered">
-          Gabi Looney
-        </div>
-        <div className="column has-text-centered">
-          Ken Causey
-        </div>
+
+      <div className="sponsorbutton">
+        <OvalButton text="Sponsor Us" to="sponsor" external="false" />
       </div>
     </section>
   </Layout>
