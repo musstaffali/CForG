@@ -1,10 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import ethan from "../images/leaders/ethan.jpg"
-import heather from "../images/leaders/heather.jpg"
 import jordan from "../images/leaders/jordan.jpg"
-import rob from "../images/leaders/rob.jpg"
-import schaffer from "../images/leaders/schaffer.jpg"
 import erich from "../images/leaders/erich.jpg"
 import trey from "../images/leaders/trey.jpg"
 import tim from "../images/leaders/tim.jpg"
@@ -27,7 +24,7 @@ const About = () => (
         Donohue
       </p>
       <p>
-        There are a few expamles that demonstrate what civic tech is, but the
+        There are a few examples that demonstrate what civic tech is, but the
         common traits to civic tech would be focused on engaging in processes to
         help resolve community and social problems through technology. The
         Omidyar Network defines their meaning of Civic Tech as “technologies
@@ -51,20 +48,8 @@ const About = () => (
           <figcaption>Ethan McElvaney</figcaption>
         </figure>
         <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={heather} alt="" />
-          <figcaption>Heather Gallop</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
           <img className="is-rounded sponsor-ico" src={jordan} alt="" />
           <figcaption>Jordan Robinson</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={rob} alt="" />
-          <figcaption>Rob Martin</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={schaffer} alt="" />
-          <figcaption>Schaffer Stewart</figcaption>
         </figure>
         <figure className="image is-96x96 captioned-ico">
           <img className="is-rounded sponsor-ico" src={erich} alt="" />
