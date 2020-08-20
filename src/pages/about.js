@@ -19,11 +19,11 @@ const About = () => (
     </section>
     <section className="blurb">
       <h1>What is Civic Tech?</h1>
-      <p className="my-3 mx-3">
+      <p className="my-3 mx-3 is-italic">
         “There is no one ‘industry standard’ definition of civic tech...” -Stacy
         Donohue
       </p>
-      <p>
+      <p className="mx-3">
         There are a few examples that demonstrate what civic tech is, but the
         common traits to civic tech would be focused on engaging in processes to
         help resolve community and social problems through technology. The

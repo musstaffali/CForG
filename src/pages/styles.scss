@@ -25,9 +25,9 @@ $title-color: $tan;
 $subtitle-color: $red;
 
 // navbar
-$navbar-background-color: $green;
-$navbar-item-hover-background-color: $lightgreen;
-$navbar-item-color: $tan;
+$navbar-background-color: $darkgreen;
+$navbar-item-hover-background-color: $green;
+$navbar-item-color: $text-white;
 $navbar-item-hover-color: $darkgreen;
 
 // footer
@@ -205,14 +205,10 @@ p {
   background-color: $red;
   & h2 {
     color: $tan;
-    padding: 10px 15px;
   }
   &:hover {
     background-color: darken($red, 10%);
   }
-}
-.join-label {
-  margin: 15px 0px 5px 0px;
 }
 
 /*projects page*/
