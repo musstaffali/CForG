@@ -50,7 +50,7 @@ const IndexPage = () => (
 
     <section className="featured-project">
       <Project
-        title="Go Vote App"
+        title="GoVoteGSO App"
         status="Active"
         link="https://github.com/codeforgso/GoVote"
         linktxt="Contribute Now"
