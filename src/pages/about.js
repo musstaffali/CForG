@@ -44,24 +44,24 @@ const About = () => (
       </div>
       <div className="icons-wrapper">
         <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={ethan} alt="" />
-          <figcaption>Ethan McElvaney</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={jordan} alt="" />
-          <figcaption>Jordan Robinson</figcaption>
+          <img className="is-rounded sponsor-ico" src={trey} alt="" />
+          <figcaption>Trey Botard</figcaption>
         </figure>
         <figure className="image is-96x96 captioned-ico">
           <img className="is-rounded sponsor-ico" src={erich} alt="" />
           <figcaption>Erich Keil</figcaption>
         </figure>
         <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={trey} alt="" />
-          <figcaption>Trey Botard</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
           <img className="is-rounded sponsor-ico" src={tim} alt="" />
           <figcaption>Tim Leisman</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={ethan} alt="" />
+          <figcaption>Ethan McElvaney</figcaption>
+        </figure>
+        <figure className="image is-96x96 captioned-ico">
+          <img className="is-rounded sponsor-ico" src={jordan} alt="" />
+          <figcaption>Jordan Robinson</figcaption>
         </figure>
       </div>
     </section>
