@@ -31,8 +31,13 @@ const IndexPage = () => (
 
     <section>
       <h1>Mission</h1>
-      <p>
-        Code for Greensboro is a local chapter of Code for America, a national 501(c)(3) nonprofit. We are dedicated to helping grow Greensboro’s tech community and improve local government services through the development of civic technology projects, the volunteer efforts of local members of our community, and by educating the public on opportunities to contribute to their community through technology.
+      <p className="my-3 ml-3">
+        Code for Greensboro is a local chapter of Code for America, a national
+        501(c)(3) nonprofit. We are dedicated to helping grow Greensboro’s tech
+        community and improve local government services through the development
+        of civic technology projects, the volunteer efforts of local members of
+        our community, and by educating the public on opportunities to
+        contribute to their community through technology.
       </p>
     </section>
 
@@ -47,13 +52,14 @@ const IndexPage = () => (
       <Project
         title="GoVoteGSO App"
         status="Active"
-        repo="https://github.com/codeforgso/GoVote"
-        body="Our voter information app (2020 re-release coming soon!) which aims to reduce barriers to voting for Greensboro and Guilford County residents."
+        link="https://github.com/codeforgso/GoVote"
+        linktxt="Contribute Now"
+        body="Our voter information app (2020 re-release coming soon!) that aims to help reduce barriers to voting for Greensboro and Guilford County residents."
       />
     </section>
 
     <section className="sponsors">
-      <p>
+      <p className="my-3">
         Code for Greensboro could not make it without the help of our community.
         Both tech-savvy and not, we have had the opportunity to help others
         through the projects we conduct. The more the merrier, as the level of
@@ -62,22 +68,37 @@ const IndexPage = () => (
       </p>
 
       <h1>Corporate Sponsors</h1>
-
       <div className="icons-wrapper">
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={hqico} alt="HQ Greensboro icon" />
-          <figcaption>HQ Greensboro</figcaption>
-        </figure>
-
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={allegacyico} alt="Allegacy icon" />
-          <figcaption>Allegacy</figcaption>
-        </figure>
-
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={ibmico} alt="IBM icon" />
-          <figcaption>IBM</figcaption>
-        </figure>
+        <a href="https://hqgreensboro.com/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={hqico}
+              alt="HQ Greensboro icon"
+            />
+            <figcaption>HQ Greensboro</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.allegacy.org/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={allegacyico}
+              alt="Allegacy icon"
+            />
+            <figcaption>Allegacy</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.ibm.com/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={ibmico}
+              alt="IBM icon"
+            />
+            <figcaption>IBM</figcaption>
+          </figure>
+        </a>
       </div>
 
       <div className="sponsorbutton">

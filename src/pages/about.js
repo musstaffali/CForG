@@ -13,7 +13,7 @@ const About = () => (
   <Layout>
     <section className="blurb">
       <h1>Who we are</h1>
-      <p>
+      <p className="my-3 mx-3">
         Code for Greensboro, also known as Code for GSO for short, is an
         organization extending from Code for America our 501(c)3 fiscal sponsor.
         We serve the local communities in Greensboro, North Carolina through
@@ -22,7 +22,7 @@ const About = () => (
     </section>
     <section className="blurb">
       <h1>What is Civic Tech?</h1>
-      <p>
+      <p className="my-3 mx-3">
         “There is no one ‘industry standard’ definition of civic tech...” -Stacy
         Donohue
       </p>
@@ -79,6 +79,19 @@ const About = () => (
           <figcaption>Tim Leisman</figcaption>
         </figure>
       </div>
+    </section>
+    <section>
+      <p className="my-6 has-text-centered">
+        Code for Greensboro is a smaller organization sharing its mission and
+        vision with its parent organization,{" "}
+        <a
+          href="https://www.codeforamerica.org/"
+          target="blank"
+          rel="noreferrer"
+        >
+          Code for America.
+        </a>{" "}
+      </p>
     </section>
   </Layout>
 )

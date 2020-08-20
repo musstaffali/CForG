@@ -1,9 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import hqico from "../images/sponsors/hqgso.jpg"
+import hqico from "../images/sponsors/hqgso2.svg"
 import allegacyico from "../images/sponsors/allegacy.jpg"
 import ibmico from "../images/sponsors/ibmico.jpg"
-import cfaico from "../images/sponsors/cfa.jpg"
 import OvalButton from "../components/oval_button"
 
 const Sponsor = () => (
@@ -11,22 +10,36 @@ const Sponsor = () => (
     <section className="sponsors">
       <h1>Corporate Sponsors</h1>
       <div className="icons-wrapper">
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={hqico} alt="" />
-          <figcaption>HQ Greensboro</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={allegacyico} alt="" />
-          <figcaption>Allegacy</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={ibmico} alt="" />
-          <figcaption>IBM</figcaption>
-        </figure>
-        <figure className="image is-96x96 captioned-ico">
-          <img className="is-rounded sponsor-ico" src={cfaico} alt="" />
-          <figcaption>Code for America</figcaption>
-        </figure>
+        <a href="https://hqgreensboro.com/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={hqico}
+              alt="HQ Greensboro icon"
+            />
+            <figcaption>HQ Greensboro</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.allegacy.org/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={allegacyico}
+              alt="Allegacy icon"
+            />
+            <figcaption>Allegacy</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.ibm.com/" target="blank" rel="noreferrer">
+          <figure className="image is-96x96 captioned-ico">
+            <img
+              className="is-rounded sponsor-ico"
+              src={ibmico}
+              alt="IBM icon"
+            />
+            <figcaption>IBM</figcaption>
+          </figure>
+        </a>
       </div>
       <div className="columns is-centered">
         <div className="column is-half">
@@ -40,7 +53,7 @@ const Sponsor = () => (
     </section>
     <section>
       <h1>Support Our Cause</h1>
-      <p>
+      <p className="my-3 mx-3">
         We are focused on helping our community using technology, agile
         processes, and bringing people together. Sponsoring us helps further our
         cause to connect with community members, collaborate with each other,
@@ -48,8 +61,10 @@ const Sponsor = () => (
       </p>
       <h1>Benefits</h1>
       <div className="content">
-        <p>Benefits for general sponsorship include the following:</p>
-        <ul>
+        <p className="mt-3 mx-3">
+          Benefits for general sponsorship include the following:
+        </p>
+        <ul className="ml-6">
           <li>Shout out on our website, and social media platforms.</li>
           <li>Tax deductions for your contributions.</li>
           <li>Helping to solve significant local issues.</li>
@@ -60,7 +75,7 @@ const Sponsor = () => (
         </ul>
       </div>
       <h1>How to Sponsor</h1>
-      <p>
+      <p className="my-3 mx-3">
         Below the corporate sponsor list is a button to initiate the
         conversation with our leadership. Someone will reach back out to learn
         more about what you want to support and contribute. We would also like

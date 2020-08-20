@@ -54,6 +54,10 @@ body {
   background-color: $tan;
 }
 
+body * {
+  font-family: $family-primary;
+}
+
 section {
   padding: 20px;
 }
@@ -97,6 +101,9 @@ p {
   color: $text-white;
 }
 
+.card-footer-item:hover {
+  background-color: darken($tan, 10%);
+}
 /*hero tweaks*/
 .hero {
   padding: 0px;
@@ -131,6 +138,7 @@ p {
 
 .icons-wrapper {
   margin: 20px auto;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -183,7 +191,7 @@ p {
 
 /*about page*/
 .leaders {
-  background-color: $darkgreen;
+  background-color: $dkblue;
   color: $tan;
   text-align: center;
   & h1 {
