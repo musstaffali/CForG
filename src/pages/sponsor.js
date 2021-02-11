@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import hqico from "../images/sponsors/hqgso2.svg"
-import allegacyico from "../images/sponsors/allegacy.jpg"
+// import allegacyico from "../images/sponsors/allegacy.jpg"
 import ibmico from "../images/sponsors/ibmico.jpg"
 import OvalButton from "../components/oval_button"
 
@@ -20,7 +20,7 @@ const Sponsor = () => (
             <figcaption>HQ Greensboro</figcaption>
           </figure>
         </a>
-        <a href="https://www.allegacy.org/" target="blank" rel="noreferrer">
+        {/* <a href="https://www.allegacy.org/" target="blank" rel="noreferrer">
           <figure className="image is-96x96 captioned-ico">
             <img
               className="is-rounded sponsor-ico"
@@ -29,7 +29,7 @@ const Sponsor = () => (
             />
             <figcaption>Allegacy</figcaption>
           </figure>
-        </a>
+        </a> */}
         <a href="https://www.ibm.com/" target="blank" rel="noreferrer">
           <figure className="image is-96x96 captioned-ico">
             <img
